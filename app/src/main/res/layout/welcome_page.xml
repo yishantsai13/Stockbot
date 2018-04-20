@@ -5,21 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="com.example.owowowowo.stockbot.MainActivity">
+    tools:context="com.example.owowowowo.stockbot.welcome">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:id="@+id/logoword"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"
-        android:src="@drawable/logoword" />
+        android:layout_marginTop="160dp"
+        android:src="@drawable/logoword"
+        android:adjustViewBounds="true"/>
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/robot"
+        android:layout_below="@+id/logoword"
+        android:adjustViewBounds="true"/>
 
 
 
