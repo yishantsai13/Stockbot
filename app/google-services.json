@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "581074673709",
+    "firebase_url": "https://happysorry-2c3e7.firebaseio.com",
+    "project_id": "happysorry-2c3e7",
+    "storage_bucket": "happysorry-2c3e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581074673709:android:652c5b3d4cda84b1",
+        "android_client_info": {
+          "package_name": "com.example.owowowowo.stockbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581074673709-hd6rku4s3g0c7d83tdc6ooh5rf6fgpqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.owowowowo.stockbot",
+            "certificate_hash": "04534598809e28699620e1109e621ca5a70d090f"
+          }
+        },
+        {
+          "client_id": "581074673709-4qdif77uf4o4issiojk5a2dc5p8knvkq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.owowowowo.stockbot",
+            "certificate_hash": "db50efae3291dd94f8dc176e4ffd7e1d5c4be9af"
+          }
+        },
+        {
+          "client_id": "581074673709-f66b6ku3em3nfjr5g6hu40jcje64jrte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4gvHFhfUp57SbPHHTIaaP12-EjI6sbao"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581074673709-f66b6ku3em3nfjr5g6hu40jcje64jrte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
