@@ -17,7 +17,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public ArrayList<String>ar=new ArrayList<>();
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.stocks);
 
         Button back=(Button)findViewById(R.id.back);
         Button back1=(Button)findViewById(R.id.back1);
@@ -171,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
 
 //2跳3
     public void jumpToLayout03(final String ch, String ch1){
-        setContentView(R.layout.third);
+        setContentView(R.layout.stock);
         Button back2=(Button)findViewById(R.id.back2);
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -210,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void backto1(){
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.stocks);
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.addValueEventListener(new ValueEventListener() {
