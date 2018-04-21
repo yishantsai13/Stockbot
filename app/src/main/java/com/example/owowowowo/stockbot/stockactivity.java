@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class stockactivity extends AppCompatActivity {
     public ArrayList<String>ar=new ArrayList<>();
     public ArrayList<String>second=new ArrayList<>();
     public ArrayList<String>third=new ArrayList<>();
