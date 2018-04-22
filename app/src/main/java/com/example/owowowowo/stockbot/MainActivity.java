@@ -17,8 +17,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class stockactivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     public ArrayList<String>ar=new ArrayList<>();
     public ArrayList<String>second=new ArrayList<>();
     public ArrayList<String>third=new ArrayList<>();
@@ -30,7 +31,7 @@ public class stockactivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.stocks);
+        setContentView(R.layout.activity_main);
 
         Button back=(Button)findViewById(R.id.back);
         Button back1=(Button)findViewById(R.id.back1);
@@ -53,7 +54,9 @@ public class stockactivity extends AppCompatActivity {
         });
 
 
-        jumpToLayout01();
+        jumpToLayout01(
+
+        );
 
     }
 
@@ -118,15 +121,16 @@ public class stockactivity extends AppCompatActivity {
 
                 for(DataSnapshot da:dataSnapshot.getChildren()){
                     String st=da.getKey().toString();
-
+                    if(st.equals("z")||st.equals("today"))
+                        continue;
                     ar.add(st);
                 }
-                initViews();
-            }
 
+                initViews();
+
+            }
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
             }
         });
 
@@ -170,7 +174,7 @@ public class stockactivity extends AppCompatActivity {
 
 //2跳3
     public void jumpToLayout03(final String ch, String ch1){
-        setContentView(R.layout.stock);
+        setContentView(R.layout.third);
         Button back2=(Button)findViewById(R.id.back2);
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -209,7 +213,7 @@ public class stockactivity extends AppCompatActivity {
     }
 
     private void backto1(){
-        setContentView(R.layout.stocks);
+        setContentView(R.layout.activity_main);
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.addValueEventListener(new ValueEventListener() {
