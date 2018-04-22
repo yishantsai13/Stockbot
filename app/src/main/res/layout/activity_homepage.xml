@@ -65,7 +65,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:src="@drawable/stock"
+                android:src="@drawable/index"
                 />
 
             <ImageView
@@ -74,7 +74,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:src="@drawable/heart" />
+                android:src="@drawable/stock" />
 
             <ImageView
                 android:id="@+id/btn_news"
