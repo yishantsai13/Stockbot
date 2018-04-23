@@ -22,7 +22,7 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
-                i.setClass(homepage.this, today.class);
+                i.setClass(homepage.this, MainActivity.class);
                 startActivity(i);
             }
         });

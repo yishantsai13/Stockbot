@@ -5,6 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:id="@+id/bar_stock"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/mainblue">
+
+        <ImageButton
+            android:id="@+id/back2"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:src="@drawable/left"
+            android:adjustViewBounds="true"
+            android:background="@color/mainblue"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+             />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/mainblue"
+            android:paddingTop="12dp"
+            android:text="@string/stockText"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
     <TextView
         android:id="@+id/tv2"
         android:layout_width="326dp"
@@ -15,14 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/back2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="2dp"
-        android:layout_marginStart="2dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/tv2"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>

@@ -54,14 +54,22 @@
         <LinearLayout
             android:id="@+id/buttons"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="300dp"
             android:orientation="horizontal"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:paddingTop="30dp">
 
+
             <ImageView
-                android:id="@+id/btn_stock"
+                android:id="@+id/btn_menu"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:src="@drawable/menu" />
+
+            <ImageView
+                android:id="@+id/btn_today"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_weight="1"
@@ -70,7 +78,7 @@
 
             <ImageView
 
-                android:id="@+id/btn_heart"
+                android:id="@+id/btn_stock"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_weight="1"
@@ -83,12 +91,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/news" />
 
-            <ImageView
-                android:id="@+id/btn_menu"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_weight="1"
-                android:src="@drawable/menu" />
+
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>

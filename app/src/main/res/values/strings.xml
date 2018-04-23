@@ -3,4 +3,5 @@
     <string name="enterBtn">進入</string>
     <string name="hihi"></string>
     <string name="welcomeText">您好啊!\n今天天氣真好</string>
+    <string name="stockText">個股資訊</string>
 </resources>

@@ -1,11 +1,13 @@
 package com.example.owowowowo.stockbot;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -33,10 +35,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button back=(Button)findViewById(R.id.back);
-        Button back1=(Button)findViewById(R.id.back1);
-        Button back2=(Button)findViewById(R.id.back2);
-
+        ImageButton back=(ImageButton) findViewById(R.id.back);
+        ImageButton back1=(ImageButton)findViewById(R.id.back1);
+        ImageButton back2=(ImageButton)findViewById(R.id.back2);
 
         /*back2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         jumpToLayout01(
 
         );
@@ -64,8 +64,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         ListView mList = (ListView) findViewById(R.id.lv);
         final TextView tv=(TextView)findViewById(R.id.tv);
-        Button back1=(Button)findViewById(R.id.back1);
-
+        ImageButton back1=(ImageButton)findViewById(R.id.back1);
 
         ListAdapter mAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
@@ -139,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 //1跳2
     public void jumpToLayout02(final String ch){
         setContentView(R.layout.second);
-        Button back1=(Button)findViewById(R.id.back1);
+        ImageButton back1=(ImageButton)findViewById(R.id.back1);
         back1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -175,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
 //2跳3
     public void jumpToLayout03(final String ch, String ch1){
         setContentView(R.layout.third);
-        Button back2=(Button)findViewById(R.id.back2);
+        ImageButton back2=(ImageButton)findViewById(R.id.back2);
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -240,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.second);
 
     }
+
 
 }
 
