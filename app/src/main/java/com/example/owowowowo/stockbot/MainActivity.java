@@ -46,13 +46,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TextView tv=(TextView)findViewById(R.id.tv);
-                tv.setText("hello");
-            }
-        });
 
         jumpToLayout01(
 
@@ -73,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
         mList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                tv.setText(ar.get(i));
                 jumpToLayout02(ar.get(i));
             }
         });
@@ -82,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
 //第二頁面
     private void initViews2(final String ch) {
         ListView mList = (ListView) findViewById(R.id.lv1);
-        final TextView tv1=(TextView)findViewById(R.id.tv1);
 
         ListAdapter mAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
@@ -91,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         mList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                tv1.setText(second.get(i));
+
                 jumpToLayout03(ch,second.get(i));
             }
         });
