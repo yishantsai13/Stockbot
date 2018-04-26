@@ -4,4 +4,14 @@
     <string name="hihi"></string>
     <string name="welcomeText">您好啊!\n今天天氣真好</string>
     <string name="stockText">個股資訊</string>
+    <string name="todayText">今日大盤</string>
+    <string name="newsText">財經新聞</string>
+    <string name="txt1">加權指數</string>
+    <string name="txt2">成交量</string>
+    <string name="txt3">昨收</string>
+    <string name="txt4">開盤價</string>
+    <string name="txt5">跌漲停</string>
+    <string name="txt6">加百分比</string>
+    <string name="txt7">今日最低</string>
+    <string name="txt8">今日最高</string>
 </resources>

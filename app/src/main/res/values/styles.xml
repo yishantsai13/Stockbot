@@ -13,4 +13,37 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="text_today">
+        <item name="android:textSize">25sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <style name="text_today1" parent="text_today">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+
+    </style>
+
+    <style name="number_today">
+        <item name="android:gravity">right</item>
+        <item name="android:shadowColor">@color/gray</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="number_today2" parent="number_today">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+
+    </style>
+
 </resources>

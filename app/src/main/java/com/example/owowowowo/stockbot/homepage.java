@@ -36,5 +36,15 @@ public class homepage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        ImageView btn_today=(ImageView)findViewById(R.id.btn_today);
+        btn_today.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent();
+                i.setClass(homepage.this,today.class);
+                startActivity(i);
+            }
+        });
     }
 }

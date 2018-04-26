@@ -11,6 +11,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ListAdapter;
+import android.widget.ImageButton;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -84,7 +85,7 @@ public class news extends AppCompatActivity {
     private void jumptonews(){
         setContentView(R.layout.activity_news);
         getnews();
-        Button button3=(Button)findViewById(R.id.button3);
+        ImageButton button3=(ImageButton)findViewById(R.id.back);
 
     }
 
