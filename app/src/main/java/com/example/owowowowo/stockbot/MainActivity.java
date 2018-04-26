@@ -47,9 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });*/
 
 
-        jumpToLayout01(
-
-        );
+        jumpToLayout01();
 
     }
 
@@ -101,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void jumpToLayout01(){
-
+        ar.clear();
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.addValueEventListener(new ValueEventListener() {
@@ -129,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
 //1跳2
     public void jumpToLayout02(final String ch){
         setContentView(R.layout.second);
+        second.clear();
         ImageButton back1=(ImageButton)findViewById(R.id.back1);
         back1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void backto1(){
         setContentView(R.layout.activity_main);
+        ar.clear();
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.addValueEventListener(new ValueEventListener() {
@@ -226,10 +226,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void backto2(String ch){
-        setContentView(R.layout.second);
 
-    }
 
 
 }

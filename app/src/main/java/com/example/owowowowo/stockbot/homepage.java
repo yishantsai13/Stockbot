@@ -17,8 +17,6 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         ImageView stockButton = (ImageView)findViewById(R.id.btn_stock);
-        ImageView todayButton = (ImageView)findViewById(R.id.btn_today);
-
          //stock button Activity
         stockButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -29,12 +27,12 @@ public class homepage extends AppCompatActivity {
             }
         });
 
-        //today button activity
-        todayButton.setOnClickListener(new View.OnClickListener(){
+        ImageView btn_news=(ImageView)findViewById(R.id.btn_news);
+        btn_news.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent i = new Intent();
-                i.setClass(homepage.this, today.class);
+            public void onClick(View view) {
+                Intent i=new Intent();
+                i.setClass(homepage.this,news.class);
                 startActivity(i);
             }
         });
