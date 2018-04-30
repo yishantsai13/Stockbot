@@ -69,15 +69,15 @@ public class today extends AppCompatActivity {
         tv7.setText(ar.get(2).toString());//今日最低
         tv8.setText(ar.get(3).toString());//今日最高
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(today.this, homepage.class);
-                startActivity(intent);
-                today.this.finish();
-            }
-        });
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent();
+//                intent.setClass(today.this, homepage.class);
+//                startActivity(intent);
+//                today.this.finish();
+//            }
+//        });
 
 
     }

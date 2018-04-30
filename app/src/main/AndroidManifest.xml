@@ -22,7 +22,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".news" />
-        <activity android:name=".web"></activity>
+        <activity android:name=".web" />
+        <activity
+            android:name=".navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
