@@ -63,9 +63,9 @@ public class today extends AppCompatActivity {
         tv1.setText(ar.get(5).toString());//最近成交價
         tv2.setText(ar.get(8).toString());//累積成交量
         tv3.setText(ar.get(4).toString());//昨收
-        tv4.setText(ar.get(7).toString());//漲跌差價
-        tv5.setText(ar.get(9).toString());//百分比
-        tv6.setText(ar.get(11).toString());//開盤價
+        tv5.setText(ar.get(7).toString());//漲跌差價
+        tv6.setText(ar.get(9).toString());//百分比
+        tv4.setText(ar.get(11).toString());//開盤價
         tv7.setText(ar.get(2).toString());//今日最低
         tv8.setText(ar.get(3).toString());//今日最高
 

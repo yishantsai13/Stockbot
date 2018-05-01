@@ -205,5 +205,13 @@
         app:fontFamily="monospace"
         style="@style/number_today2"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/stockimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv8" />
 
 </android.support.constraint.ConstraintLayout>

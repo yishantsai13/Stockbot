@@ -24,7 +24,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     public ArrayList<String>ar=new ArrayList<>();
     public ArrayList<String>second=new ArrayList<>();
-    public ArrayList<String>third=new ArrayList<>();
+    public ArrayList<String>thirdvalue=new ArrayList<>();
+    public ArrayList<String>thirdkey=new ArrayList<>();
 
 
 
@@ -89,11 +90,46 @@ public class MainActivity extends AppCompatActivity {
     //第三頁面
     private void initViews3() {
         TextView tv2=(TextView)findViewById(R.id.tv2);
-        tv2.setTextSize(20);
-        for(int i=0;i<third.size();i++){
-            tv2.append(third.get(i));
+        tv2.setTextSize(25);
+        for(int i=0;i<thirdkey.size();i++){
+            tv2.append(thirdkey.get(i).toString());
+            tv2.append(":");
+            tv2.append(thirdvalue.get(i).toString());
             tv2.append("\n");
         }
+//        a=thirdkey.get(0);
+//        b=thirdkey.get(1);
+//        c=thirdkey.get(2);
+//        d=thirdkey.get(3);
+//        e=thirdkey.get(4);
+//        f=thirdkey.get(5);
+//        g=thirdkey.get(6);
+//        h=thirdkey.get(7);
+//        i=thirdkey.get(8);
+//        j=thirdkey.get(9);
+//        k=thirdkey.get(10);
+//        l=thirdkey.get(11);
+//        m=thirdkey.get(12);
+//        n=thirdkey.get(13);
+//        o=thirdkey.get(14);
+//        p=thirdkey.get(15);
+////value
+//        a1=thirdvalue.get(0);
+//        b1=thirdvalue.get(1);
+//        c1=thirdvalue.get(2);
+//        d1=thirdvalue.get(3);
+//        e1=thirdvalue.get(4);
+//        f1=thirdvalue.get(5);
+//        g1=thirdvalue.get(6);
+//        h1=thirdvalue.get(7);
+//        i1=thirdvalue.get(8);
+//        j1=thirdvalue.get(9);
+//        k1=thirdvalue.get(10);
+//        l1=thirdvalue.get(11);
+//        m1=thirdvalue.get(12);
+//        n1=thirdvalue.get(13);
+//        o1=thirdvalue.get(14);
+//        p1=thirdvalue.get(15);
 
     }
 
@@ -183,12 +219,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int i=0;
-                third.clear();
+                thirdkey.clear();
+                thirdvalue.clear();
                 for(DataSnapshot da:dataSnapshot.getChildren()){
                     for(DataSnapshot dada:da.getChildren()) {
-                        String st = dada.getKey().toString()+":"+dada.getValue().toString();
+                        String st = dada.getKey().toString();
+                        thirdkey.add(st);
+                        st=dada.getValue().toString();
+                        thirdvalue.add(st);
 
-                        third.add(st);
+
+
                     }
                 }
                 initViews3();
