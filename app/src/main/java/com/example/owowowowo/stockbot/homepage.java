@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.content.Intent;
 
 
-public class homepage extends AppCompatActivity {
+public class homepage extends navigation {
 
 
 
@@ -43,6 +43,16 @@ public class homepage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent();
                 i.setClass(homepage.this,today.class);
+                startActivity(i);
+            }
+        });
+
+        ImageView btn_select=(ImageView)findViewById(R.id.btn_select);
+        btn_select.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent();
+                i.setClass(homepage.this,selectStock.class);
                 startActivity(i);
             }
         });

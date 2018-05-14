@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -29,6 +30,16 @@ public class news extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
         getnews();
+
+        ImageView btn_backhome=(ImageView)findViewById(R.id.back_home);
+        btn_backhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent();
+                i.setClass(news.this,homepage.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void getnews(){
@@ -85,7 +96,7 @@ public class news extends AppCompatActivity {
     private void jumptonews(){
         setContentView(R.layout.activity_news);
         getnews();
-        ImageButton button3=(ImageButton)findViewById(R.id.back);
+        ImageButton button3=(ImageButton)findViewById(R.id.back_home);
 
     }
 

@@ -6,52 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".today">
 
-    <android.support.design.widget.AppBarLayout
+
+    <LinearLayout
         android:id="@+id/bar_stock"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="70dp"
+        android:background="@color/mainblue"
+        android:orientation="horizontal">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <ImageButton
+            android:id="@+id/back_home"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:adjustViewBounds="true"
+            android:background="@color/mainblue"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@color/mainblue"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:titleTextAppearance="@style/title"
-            app:title="@string/todayText"
-
-            />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <!--<LinearLayout-->
-        <!--android:id="@+id/bar_stock"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="70dp"-->
-        <!--android:background="@color/mainblue"-->
-        <!--android:orientation="horizontal">-->
-
-        <!--<ImageButton-->
-            <!--android:id="@+id/back"-->
-            <!--android:layout_width="45dp"-->
-            <!--android:layout_height="30dp"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginTop="18dp"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:background="@color/mainblue"-->
-            <!--android:scaleType="centerInside"-->
-            <!--android:src="@drawable/back" />-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="70dp"-->
-            <!--android:background="@color/mainblue"-->
-            <!--android:paddingTop="12dp"-->
-            <!--android:text="@string/todayText"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textSize="30sp" />-->
-    <!--</LinearLayout>-->
+            android:paddingTop="12dp"
+            android:text="@string/todayText"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text1"

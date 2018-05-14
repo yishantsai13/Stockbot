@@ -1,5 +1,6 @@
 package com.example.owowowowo.stockbot;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -36,16 +38,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton back=(ImageButton) findViewById(R.id.back);
+        ImageButton back=(ImageButton) findViewById(R.id.back_home);
         ImageButton back1=(ImageButton)findViewById(R.id.back1);
         ImageButton back2=(ImageButton)findViewById(R.id.back2);
 
-        /*back2.setOnClickListener(new View.OnClickListener() {
+
+        ImageView btn_backhome=(ImageView)findViewById(R.id.back_home);
+        btn_backhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.second);
+                Intent i=new Intent();
+                i.setClass(MainActivity.this,homepage.class);
+                startActivity(i);
             }
-        });*/
+        });
+//        back2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                setContentView(R.layout.second);
+//            }
+//        });
 
 
         jumpToLayout01();

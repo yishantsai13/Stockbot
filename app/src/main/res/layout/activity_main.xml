@@ -15,7 +15,7 @@
         android:background="@color/mainblue">
 
         <ImageButton
-            android:id="@+id/back"
+            android:id="@+id/back_home"
             android:layout_width="45dp"
             android:layout_height="30dp"
             android:adjustViewBounds="true"
@@ -23,7 +23,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginLeft="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/back" />
+            android:src="@drawable/ic_back" />
 
         <TextView
             android:layout_width="match_parent"

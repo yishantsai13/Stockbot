@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/back"
+            android:id="@+id/back_home"
             android:layout_width="45dp"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
@@ -22,7 +22,7 @@
             android:adjustViewBounds="true"
             android:background="@color/mainblue"
             android:scaleType="centerInside"
-            android:src="@drawable/back" />
+            android:src="@drawable/ic_back" />
 
         <TextView
             android:layout_width="match_parent"

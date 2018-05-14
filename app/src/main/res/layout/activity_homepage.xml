@@ -52,20 +52,22 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/buttons"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="375dp"
         android:background="@color/mainblue"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="35dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        >
 
 
         <ImageView
-            android:id="@+id/btn_menu"
+            android:id="@+id/btn_select"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/white"
-            android:src="@drawable/menu"
+            android:src="@drawable/analytics"
+            android:padding="20dp"
             app:layout_constraintEnd_toStartOf="@+id/btn_today"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +81,7 @@
             android:src="@drawable/index"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btn_menu"
+            app:layout_constraintStart_toEndOf="@+id/btn_select"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
@@ -110,9 +112,9 @@
             android:id="@+id/btnText_menu"
             style="@style/homepageButtonText"
             android:text="@string/menuText"
-            app:layout_constraintEnd_toEndOf="@+id/btn_menu"
-            app:layout_constraintStart_toStartOf="@+id/btn_menu"
-            app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
+            app:layout_constraintEnd_toEndOf="@+id/btn_select"
+            app:layout_constraintStart_toStartOf="@+id/btn_select"
+            app:layout_constraintTop_toBottomOf="@+id/btn_select" />
 
         <TextView
             android:id="@+id/btnText_today"

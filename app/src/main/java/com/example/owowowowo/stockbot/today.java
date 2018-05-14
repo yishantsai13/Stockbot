@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ImageButton;
 
@@ -16,12 +17,23 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class today extends AppCompatActivity {
+public class today extends navigation {
     ArrayList<String>ar=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_today);
+//        initializeToolbar();
+
+        ImageView btn_backhome=(ImageView)findViewById(R.id.back_home);
+        btn_backhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent();
+                i.setClass(today.this,homepage.class);
+                startActivity(i);
+            }
+        });
 
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance().getReference().child("today");
@@ -58,7 +70,7 @@ public class today extends AppCompatActivity {
         TextView tv6=(TextView)findViewById(R.id.tv6);
         TextView tv7=(TextView)findViewById(R.id.tv7);
         TextView tv8=(TextView)findViewById(R.id.tv8);
-        ImageButton back=(ImageButton)findViewById(R.id.back);
+//        ImageButton back=(ImageButton)findViewById(R.id.back_home);
 
         tv1.setText(ar.get(5).toString());//最近成交價
         tv2.setText(ar.get(8).toString());//累積成交量
@@ -68,17 +80,7 @@ public class today extends AppCompatActivity {
         tv4.setText(ar.get(11).toString());//開盤價
         tv7.setText(ar.get(2).toString());//今日最低
         tv8.setText(ar.get(3).toString());//今日最高
-
-//        back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent();
-//                intent.setClass(today.this, homepage.class);
-//                startActivity(intent);
-//                today.this.finish();
-//            }
-//        });
-
-
     }
+
+
 }

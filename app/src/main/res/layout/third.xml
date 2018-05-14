@@ -22,7 +22,7 @@
             android:adjustViewBounds="true"
             android:background="@color/mainblue"
             android:scaleType="centerInside"
-            android:src="@drawable/left" />
+            android:src="@drawable/ic_back" />
 
 
         <TextView

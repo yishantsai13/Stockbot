@@ -21,7 +21,11 @@ public class navigation extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        initializeToolbar();
+    }
 
+
+    protected void initializeToolbar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //找到drawerlayout
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -31,15 +35,15 @@ public class navigation extends AppCompatActivity
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
-       toggle.syncState();
+        toggle.syncState();
 
 
         //新增側邊選單
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         // 為navigatin_view設置點擊事件
         navigationView.setNavigationItemSelectedListener(this);
-    }
 
+    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
