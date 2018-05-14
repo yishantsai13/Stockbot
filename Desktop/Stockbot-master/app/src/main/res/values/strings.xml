@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="enterBtn">進入</string>
+    <string name="hihi"></string>
+    <string name="welcomeText">您好啊!\n今天天氣真好</string>
+    <string name="stockText">個股資訊</string>
+    <string name="todayText">今日大盤</string>
+    <string name="newsText">財經新聞</string>
+    <string name="txt1">加權指數</string>
+    <string name="txt2">成交量</string>
+    <string name="txt3">昨收</string>
+    <string name="txt4">開盤價</string>
+    <string name="txt5">跌漲停</string>
+    <string name="txt6">加百分比</string>
+    <string name="txt7">今日最低</string>
+    <string name="txt8">今日最高</string>
+    <string name="menuText">智慧分析</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_home">首頁</string>
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".homepage"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="160dp"
+            android:layout_height="203dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/hihi"
+            android:src="@drawable/robot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_message"
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/message"
+            app:layout_constraintBottom_toBottomOf="@+id/logo"
+            app:layout_constraintLeft_toRightOf="@id/logo"
+            app:layout_constraintTop_toTopOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="115dp"
+            android:layout_height="99dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/welcomeText"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_message"
+            app:layout_constraintLeft_toLeftOf="@+id/img_message"
+            app:layout_constraintTop_toTopOf="@+id/img_message"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:background="@color/mainblue"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="35dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        >
+
+
+        <ImageView
+            android:id="@+id/btn_select"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:src="@drawable/analytics"
+            android:padding="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_today"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_today"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:src="@drawable/index"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_select"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_stock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:src="@drawable/stock"
+            app:layout_constraintEnd_toStartOf="@+id/btn_news"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnText_menu" />
+
+        <ImageView
+            android:id="@+id/btn_news"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:src="@drawable/news"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_stock"
+            app:layout_constraintTop_toBottomOf="@+id/btnText_today" />
+
+        <TextView
+            android:id="@+id/btnText_menu"
+            style="@style/homepageButtonText"
+            android:text="@string/menuText"
+            app:layout_constraintEnd_toEndOf="@+id/btn_select"
+            app:layout_constraintStart_toStartOf="@+id/btn_select"
+            app:layout_constraintTop_toBottomOf="@+id/btn_select" />
+
+        <TextView
+            android:id="@+id/btnText_today"
+            style="@style/homepageButtonText"
+            android:text="@string/todayText"
+            app:layout_constraintStart_toStartOf="@+id/btn_today"
+            app:layout_constraintTop_toBottomOf="@+id/btn_today" />
+
+        <TextView
+            android:id="@+id/btnText_stock"
+            style="@style/homepageButtonText"
+            android:text="@string/stockText"
+            app:layout_constraintStart_toStartOf="@+id/btn_stock"
+            app:layout_constraintTop_toBottomOf="@+id/btn_stock" />
+
+        <TextView
+            android:id="@+id/btnText_news"
+            style="@style/homepageButtonText"
+            android:text="@string/newsText"
+            app:layout_constraintStart_toStartOf="@+id/btn_news"
+            app:layout_constraintTop_toBottomOf="@+id/btn_news" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="103dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+</android.support.constraint.ConstraintLayout>
+
+
