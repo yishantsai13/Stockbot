@@ -23,12 +23,12 @@
         </activity>
         <activity android:name=".news" />
         <activity android:name=".web" />
-        <activity
-            android:name=".navigation"
-            android:label="@string/title_activity_navigation"
-            android:theme="@style/AppTheme">
+        <!--<activity-->
+            <!--android:name=".navigation"-->
+            <!--android:label="@string/title_activity_navigation"-->
+            <!--android:theme="@style/AppTheme">-->
 
-        </activity>
+        <!--</activity>-->
         <activity android:name=".selectStock" />
         <!--<activity android:name=".BasicActivity"></activity>-->
     </application>
